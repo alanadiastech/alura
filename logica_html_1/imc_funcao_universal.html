@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC</title>
+</head>
+<body>
+   <h1>Organizar os dados e funções para calcular o IMC de forma "global".</h1>
+    <script>
+        
+        function pulaLinha(){
+            document.write("<br>");
+        }
+ 
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+        
+        function calculaImc(altura, peso){
+            var imc = peso / (altura*altura);
+            mostra(imc);
+        }
+        
+        var pesoMaria=65;
+        var alturaMaria=1.85;
+        calculaImc(1.85, 65);
+        pulaLinha();
+
+        var pesoEle=90;
+        var alturaEle=2.10;
+        calculaImc(2.10, 90);
+        pulaLinha();
+      
+
+    </script>
+</body>
+</html>

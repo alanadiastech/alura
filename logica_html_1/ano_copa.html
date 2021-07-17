@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Copa</title>
+</head> 
+<body>
+
+    <script>
+
+        function pulaLinha(){
+            document.write("<br>");
+        }
+
+        function mostra(frase){
+            document.write(frase);
+            pulaLinha();
+        }
+
+        var anoCopa = parseInt(prompt("Entre com o ano inicial: ")); 
+        
+        var limite = parseInt(prompt("Entre com a data limite: ")); 
+         
+        mostra ("<p><h1>Teve copa nos seguintes anos:</h1></p>")
+        pulaLinha();
+        
+        while(anoCopa <= limite) {
+            mostra(anoCopa + ";");
+            anoCopa =anoCopa + 4;
+            pulaLinha();
+             
+        }
+
+        
+        mostra("<p><h2>FIM!</h2></p>")
+
+       
+    </script>
+</body>
+</html>

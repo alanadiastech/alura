@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O ano de copa que nunca chega!
+    </title>
+</head>
+<body>
+    
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var anoCopa = 1930;
+    var limite = parseInt(prompt("Qual é o ano limite?"));
+
+    while(anoCopa <= limite) {
+        anoCopa = anoCopa + 4;
+        mostra(anoCopa + " tem copa!");
+    }
+    mostra("Ufa! Esses foram os anos de copa até " + limite);
+    
+</script>
+</body>
+</html>
